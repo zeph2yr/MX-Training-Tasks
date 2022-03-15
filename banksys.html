@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML INTRO</title>
+        <script>
+          document.write("Banking System")
+        document.write("<br>")
+        document.write("<br>")
+        
+        function bank(){
+            this.bal=0;
+            this.openacc = function(openbal){
+                this.bal=openbal;
+                document.write("Account opened and Your current balance is " + openbal)
+            }
+            this.withdraw = function(withdrawamt){
+                if(withdrawamt>this.bal)
+                document.write("You dont have Enough Balance in you account")
+                else
+                {   
+                    this.bal = this.bal - withdrawamt; 
+                    document.write("Amount Withdraw Successfull Your Cureent Balance is :" + this.bal);   }
+            }
+            this.deposit = function(depositamt){
+                this.bal=this.bal + depositamt;
+                document.write("You deposited the Amount is " + depositamt)
+                document.write("<br>")
+                document.write("<br>")
+                document.write("Now your current balance is " + this.bal)
+            }
+        }
+
+        var acc = new bank();
+        acc.openacc(13000);
+        document.write("<br>")
+        document.write("<br>")
+        acc.withdraw(5000);
+        document.write("<br>")
+        document.write("<br>")
+        acc.deposit(15000);
+        document.write("<br>")
+        document.write("<br>")
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>

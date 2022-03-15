@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HTML INTRO</title>
+        <script>
+          document.write("Task Deletion");
+        document.write("<br>");
+        document.write("<br>");
+        
+        function taskdel(){
+            this.taskarr = ["Perfoming Blood Test","Sending Report to the Doctor","Prescribe Medication","Regular Check Ups"];
+            document.write(this.taskarr);
+            this.del= function(i){
+                document.write("<br>")
+                this.taskarr.splice(i,1);
+                document.write("Updated: ");
+                document.write("<br>")
+                document.write(this.taskarr);
+            }
+        }
+        
+        var task = new taskdel();
+        task.del(1);
+        </script>
+    </head>
+    <body>
+        
+    </body>
+</html>
