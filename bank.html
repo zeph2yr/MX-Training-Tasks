@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Banking System</title>
+        <script>
+            var opnbalance = document.getElementById("opnbal").value;
+            opnbalance = opnbalance*1;
+            var bal;
+            bal = bal*1;
+            var withamt = document.getElementById("withamt").value;
+            withamt = withamt*1;
+            var depoamt = document.getElementById("depoamt").value;
+            depoamt = depoamt*1;
+            
+            function opnAcc(){
+                
+                var opnpatt = /^[0-9 ]+$/;
+                this.opnbalance = opnbalance;
+                
+                if(opnpatt.test(this.opnbalance))
+                {
+                    alert("Invalid input!");
+                }
+                else if(this.opnbalance < 6000)
+                {
+                    alert("Opening Balance should be 6000 and above");
+                }
+                else
+                {
+                    this.bal = this.opnbalance;
+                    alert("Account Opened Successfully And Your Current Balance is "+ this.bal);
+                }
+             }
+
+             function withdraw(){
+
+                var withpatt = /^[0-9 ]+$/;
+                this.withamt = withamt;
+
+                if(withpatt.test(this.withamt))
+                {
+                    alert("Invalid Input");
+                }
+                else if(this.withamt<this.bal)
+                {
+                    alert("Insufficient Balance!");
+                }
+                else{
+                    this.bal = this.bal - this.withamt;
+                    alert("Transaction Successful and Your Current Balance is "+ this.bal);
+                }
+             }
+
+             function deposit(){
+
+                var depopatt = /^[0-9 ]+$/;
+                this.depoamt = depoamt;
+
+                if(depopatt.test(this.depoamt))
+                {
+                    alert("Invalid Input");
+                }
+                else
+                {
+                    this.bal = this.bal+this.depoamt;
+                    alert("Deposit Successful and Your Current Balance is "+ this.bal);
+                }
+             }
+        </script>
+        <body>
+            <h1>Welcome to the Bank!</h1>
+            <p><input type="text" id="opnbal" placeholder="Enter the opening balance"></p>
+            <p><input type="text" id="withamt" placeholder="Enter the withdrawal amount"></p>
+            <p><input type="text" id="depoamt" placeholder="Enter the deposit amount"></p>
+            <p><button type="button" onclick="opnAcc()">Open Account</button></p>
+            <p><button type="button" onclick="withdraw()">Withdraw</button></p>
+            <p><button type="button" onclick="deposit()">Deposit</button></p>
+        </body>
+    </head>  
+</html>
