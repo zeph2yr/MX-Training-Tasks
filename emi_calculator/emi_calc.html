@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width-device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+    </head>
+    <body>
+        <div class="emi-holder">
+            <div class="calculator card">
+                <h1>EMI Calculator</h1>
+                <form action="">
+                    <div class="block">
+                        <h3>Loan Amount</h3>
+                        <input type="number" name="amount" id="amount">
+                    </div>
+                    <div class="block">
+                        <h3>Interest</h3>
+                        <input type="number" name="ir" id="ir">
+                    </div>
+                    <div class="block">
+                        <h3>Time(yrs)</h3>
+                        <input type="number" name="time" id="time">
+                    </div>
+                    <div class="button">
+                        <button class="btn" style="border-radius: 2px;" id="find">Find EMI</button>
+                    </div>
+                </form>
+            </div>
+            <div class="result card">
+                <h1>Results</h1>
+                <h3>Total Emi: <span class="emi"></span></h3>
+                <h3>Total Interest: <span class="totalInt"></span></h3>
+                <h3>Total Amount: <span class="totalAmount"></span></h3>
+            </div>
+        </div>
+        <script src="./calc.js"></script>
+    </body>
+</html>
