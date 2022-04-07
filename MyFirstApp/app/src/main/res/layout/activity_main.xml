@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Food"
+                android:gravity="center"
+                android:id="@+id/tv1"
+                android:textSize="27dp"/>
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tv1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/logo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple"
+                android:layout_below="@id/image1"
+                android:id="@+id/tv2"
+                android:textSize="27dp"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/image2"
+                android:layout_marginLeft="210dp"
+                android:layout_below="@id/tv1"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/tv3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image2"
+                android:layout_marginLeft="210dp"
+                android:text="Apple"
+                android:textSize="27dp" />
+
+            <ImageView
+                android:id="@+id/image3"
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:layout_below="@+id/tv2"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/logo" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Apple"
+                android:layout_below="@id/image3"
+                android:id="@+id/tv4"
+                android:textSize="27dp"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="200dp"
+                android:id="@+id/image4"
+                android:layout_marginLeft="210dp"
+                android:layout_below="@id/tv3"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/logo"/>
+
+            <TextView
+                android:id="@+id/tv6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/image4"
+                android:layout_marginLeft="210dp"
+                android:text="Apple"
+                android:textSize="27dp" />
+
+            <ImageView
+                android:id="@+id/image5"
+                android:layout_width="match_parent"
+                android:layout_height="170dp"
+                android:background="@drawable/photo"
+                android:layout_below="@id/tv6"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="End"
+                android:layout_below="@id/image5"
+                android:textSize="27dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"/>
+
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>
