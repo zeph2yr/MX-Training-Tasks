@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_width="123.33dp"
+        android:layout_height="80dp"
+        android:id="@+id/button1"
+        android:text="About us"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"/>
+
+    <Button
+        android:layout_width="123.33dp"
+        android:layout_height="80dp"
+        android:id="@+id/button2"
+        android:text="Music"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/button1"/>
+
+    <Button
+        android:layout_width="123.33dp"
+        android:layout_height="80dp"
+        android:id="@+id/button3"
+        android:text="Gallery"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/button2"/>
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:id="@+id/hori1"
+        android:layout_height="340dp"
+        android:layout_below="@id/button3"
+        android:layout_marginTop="20dp"
+        android:contentDescription="Horizontal Scrollview">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/image1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/pic1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image2"
+                android:layout_toRightOf="@id/image1"
+                android:background="@drawable/pic2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/image2"
+                android:id="@+id/image3"
+                android:background="@drawable/pic3"/>
+
+        </RelativeLayout>
+    </HorizontalScrollView>
+
+</RelativeLayout>

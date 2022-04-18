@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Aboutus">
+
+    <TextView
+        android:id="@+id/aboutPage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="About Us"
+
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:layout_marginTop="15sp"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/ceo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10sp"
+        app:cardCornerRadius="10sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        app:strokeColor="#F2F3F5"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="15sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/ceoImg"
+                android:src="@drawable/ceo_mx"
+                android:layout_width="160sp"
+                android:layout_height="170sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="25sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="Name: KARAN BEDI"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Designation: CEO"
+                    android:textColor="@color/black"
+                    android:id="@+id/DocSpecial"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="The Man Behind India’s Largest OTT Platform, MX Player"
+                    android:id="@+id/DocExp"
+                    android:textSize="15sp"
+                    android:layout_marginTop="20dp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/vp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardElevation="10sp"
+        app:cardCornerRadius="10sp"
+        android:layout_marginTop="50sp"
+        android:layout_marginLeft="15sp"
+        android:layout_marginRight="15sp"
+        app:strokeColor="#F2F3F5"
+        app:strokeWidth="1dp">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:padding="15sp"
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/vpImg"
+                android:src="@drawable/vp_mx"
+                android:layout_width="160sp"
+                android:layout_height="170sp" />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="25sp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="18sp"
+                    android:text="Name: Siddharth Mantri"
+                    android:textStyle="bold"/>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Designation: Senior VP"
+                    android:textColor="@color/black"
+                    android:id="@+id/des"
+                    android:textSize="16sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="High impact product leader with an exceptional record creating a differentiated product vision"
+                    android:id="@+id/about"
+                    android:textSize="15sp"
+                    android:layout_marginTop="15dp"
+                    android:textColor="@color/black"
+                    android:textStyle="normal" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+</LinearLayout>
